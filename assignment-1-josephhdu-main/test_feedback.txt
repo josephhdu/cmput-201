@@ -1,0 +1,31 @@
+## Encryption tests
+en: 1 letter, 1 word, easy mapping (a,b; b,c; ...): **failed**  
+en: 20 letters, 1 word, easy mapping: **failed**  
+en: 1 letter, 5 words, easy mapping: **failed**  
+en: 20 letters, 5 words, easy mapping: **failed**  
+en: 1 letter, 5 words, arbitrary mapping: **failed**  
+en: 20 letters 5 words, arbitrary mapping: **failed**  
+en: 20 arbitrary length words, arbitrary mapping: **failed**  
+en: 100 arbitrary length words, arbitrary mapping: **failed**  
+en: 5000 arbitrary length words, arbitrary mapping: **failed**  
+
+**Encryption test grade**: 0/9
+
+## Decryption tests
+de: 1 letter, easy mapping: **failed**  
+de: 20 letters, easy mapping: **failed**  
+de: 1 letter 5 words, easy mapping: **failed**  
+de: 20 letters 5 words, easy mapping: **failed**  
+de: 1 letter 5 words, arbitrary mapping: **failed**  
+de: 20 letters 5 words, arbitrary mapping: **failed**  
+de: 20 arbitrary length words, arbitrary mapping: **failed**  
+de: 100 arbitrary length words, arbitrary mapping, mixed tabs: **failed**  
+de: 5000 arbitrary length words, arbitrary mapping, mixed tabs: **failed**  
+
+**Decryption test grade**: 0/9
+
+## Student tests
+Student encryption test: passed  
+Student decryption test: passed  
+
+**Student test grade**: 2/2

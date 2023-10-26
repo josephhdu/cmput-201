@@ -1,0 +1,39 @@
+## Error handling
+File error: no input: exit code passed; **failed**  1c1 < Error: Input word file <Name of input file> does not exist --- > Error: Input word file input/notaninput.txt does not exist
+
+File error: nonexistent mapping: exit code passed; **failed**  1c1 < Error: Mapping file <Name of mapping file> does not exist --- > Error: Mapping file maps/notamapping.csv does not exist
+
+Mapping error: missing letter: exit code passed; **failed**  1c1 < Error: The format of mapping file <Name of mapping file> is incorrect --- > Error: The format of mapping file maps/bad_mapping1.csv is incorrect
+
+Mapping error: symbol mapping: exit code passed; **failed**  1c1 < Error: The format of mapping file <Name of mapping file> is incorrect --- > Error: The format of mapping file maps/bad_mapping10.csv is incorrect
+
+Mapping error: uppercase letter: exit code passed; **failed**  1c1 < Error: The format of mapping file <Name of mapping file> is incorrect --- > Error: The format of mapping file maps/bad_mapping2.csv is incorrect
+
+Mapping error: repeat mapping: **failed**  1c1 < --- > Error: The format of mapping file maps/bad_mapping3.csv is incorrect
+
+Mapping error: too many characters: exit code passed; **failed**  1c1 < Error: The format of mapping file <Name of mapping file> is incorrect --- > Error: The format of mapping file maps/bad_mapping4.csv is incorrect
+
+Mapping error: extra characters on a line: **failed**  1c1 < --- > Error: The format of mapping file maps/bad_mapping5.csv is incorrect
+
+Mapping error: missing newline: exit code passed; **failed**  1c1 < Error: The format of mapping file <Name of mapping file> is incorrect --- > Error: The format of mapping file maps/bad_mapping6.csv is incorrect
+
+Mapping error: repeated character: **failed**  1c1 < --- > Error: The format of mapping file maps/bad_mapping7.csv is incorrect
+
+Mapping error: repeated mapping: **failed**  1c1 < --- > Error: The format of mapping file maps/bad_mapping8.csv is incorrect
+
+Mapping error: number mapping: exit code passed; **failed**  1c1 < Error: The format of mapping file <Name of mapping file> is incorrect --- > Error: The format of mapping file maps/bad_mapping9.csv is incorrect
+
+Mode error: mode 0: exit code passed; **failed**  1c1 < You entered <value of incorrect mode>. Sorry, your mode must be 1 for encryption or 2 for decryption --- > You entered 0. Sorry, your mode must be 1 for encryption or 2 for decryption
+
+Mode error: mode 3: exit code passed; **failed**  1c1 < You entered <value of incorrect mode>. Sorry, your mode must be 1 for encryption or 2 for decryption --- > You entered 3. Sorry, your mode must be 1 for encryption or 2 for decryption
+
+Mode error: mode s: exit code passed; **failed**  1c1 < You entered <value of incorrect mode>. Sorry, your mode must be 1 for encryption or 2 for decryption --- > You entered s. Sorry, your mode must be 1 for encryption or 2 for decryption
+
+Usage error: too few arguments: exit code passed; error msg passed  
+Usage error: too many arguments: exit code passed; error msg passed  
+Usage error: nonsense arguments: **failed**  1c1 < ./error_tests/usage_error3.sh: line 4: 3398708 Segmentation fault ./encrypt -x 1 -t maps/mapping1.csv -i input/input_encrypt1.txt --- > Usage: ./encrypt -t <mappingfile> -m <encryption mode> -i <inputfile>
+
+Usage error: repeated arguments: exit code passed; error msg passed  
+Usage error: no arguments: exit code passed; error msg passed  
+
+**Error-handling grade**: 9/20

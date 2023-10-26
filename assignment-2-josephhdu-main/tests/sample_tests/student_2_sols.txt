@@ -1,0 +1,5 @@
+python;(7,2);1
+nodeJS;(7,7);4
+hammin;(7,5);4
+typede;(7,4);4
+roosts;(2,0);3
