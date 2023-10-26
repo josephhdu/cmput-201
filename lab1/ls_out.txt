@@ -1,0 +1,12 @@
+total 11K
+drwxr-xr-x 2 jdu8 jdu8 3 Jan 10 11:36 Desktop
+drwxr-xr-x 2 jdu8 jdu8 2 Sep  2  2021 Documents
+drwxr-xr-x 2 jdu8 jdu8 2 Sep  2  2021 Downloads
+drwxr-xr-x 2 jdu8 jdu8 2 Sep  2  2021 Music
+drwxr-xr-x 2 jdu8 jdu8 2 Sep  2  2021 Pictures
+drwxr-xr-x 2 jdu8 jdu8 2 Sep  2  2021 Public
+drwxr-xr-x 2 jdu8 jdu8 2 Sep  2  2021 Templates
+drwxr-xr-x 2 jdu8 jdu8 2 Sep  2  2021 Videos
+drwx------ 2 jdu8 jdu8 2 Jan 10 12:04 cmput201
+drwx------ 4 jdu8 jdu8 4 Sep  7 14:09 cmput201lastsem
+-rw------- 1 jdu8 jdu8 0 Jan 10 12:11 ls_out.txt
